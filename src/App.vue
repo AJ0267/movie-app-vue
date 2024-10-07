@@ -9,7 +9,7 @@
       <div class="flex-none gap-2">
         <div class="form-control">
           <input
-            v-model="searchQuery"
+            v-model.trim="searchQuery"
             type="text"
             placeholder="Search for movies..."
             class="input input-bordered border-[#9400FF] border-2 w-40 md:w-auto"
