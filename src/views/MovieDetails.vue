@@ -34,7 +34,7 @@ export default {
   created() {
     const title = this.$route.params.title; 
     axios
-      .get(`http://www.omdbapi.com/?t=${title}&apikey=${this.apiKey}`)
+      .get(`https://www.omdbapi.com/?t=${title}&apikey=${this.apiKey}`)
       .then((response) => {
         if (response.data.Response === "True") {
           this.movie = response.data; 

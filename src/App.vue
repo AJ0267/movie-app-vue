@@ -67,7 +67,7 @@ export default {
 
         axios
           .get(
-            `http://www.omdbapi.com/?s=${this.searchQuery}&type=movie&apikey=${this.apiKey}`
+            `https://www.omdbapi.com/?s=${this.searchQuery}&type=movie&apikey=${this.apiKey}`
           )
           .then((response) => {
             if (response.data.Response === "True") {
