@@ -28,7 +28,7 @@ export default {
   data() {
     return {
       movie: {},
-      apiKey: import.meta.env.VITE_OMDB_API_KEY,
+      apiKey: "972dfa6d",
     };
   },
   created() {
