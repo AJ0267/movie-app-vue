@@ -56,7 +56,7 @@ export default {
       movies: [],
       hasSearched: false,
       isInputEmpty: false,
-      apiKey: import.meta.env.VITE_OMDB_API_KEY,
+      apiKey: "972dfa6d",
     };
   },
   methods: {
