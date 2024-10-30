@@ -47,6 +47,7 @@
 import axios from "axios";
 // import { watch } from "vue";
 import ThemeControl from "./components/ThemeControl.vue";
+import { onMounted } from "vue";
 
 export default {
   components: { ThemeControl },
@@ -61,6 +62,7 @@ export default {
   },
   methods: {
     searchMovies() {
+      // console.log(this.apiKey)
       if (this.searchQuery) {
         const encodedQuery = encodeURIComponent(this.searchQuery.trim());
         this.$router.push(`/foundmovies/${encodedQuery}`);
